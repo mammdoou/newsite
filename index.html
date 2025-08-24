@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="عيادة د. محمد سند لطب الأسنان - تقديم أفضل الخدمات الطبية في مجال طب الأسنان">
+    <title>عيادة د. محمد سند لطب الأسنان</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'tajawal': ['Tajawal', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#38B6FF',
+                        secondary: '#1E3A8A',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-tajawal bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="text-primary font-bold text-2xl">
+                        <i class="fas fa-tooth text-3xl ml-2"></i>
+                        عيادة د. محمد سند
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1 space-x-reverse">
+                    <a href="#home" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-50">الرئيسية</a>
+                    <a href="#services" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-50">الخدمات</a>
+                    <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-50">عن العيادة</a>
+                    <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-50">التواصل</a>
+                    <a href="tel:015507662295" class="bg-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-600 transition duration-300">
+                        <i class="fas fa-phone ml-1"></i> احجز موعد
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 bg-gradient-to-l from-blue-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex items-center">
+                <div class="lg:w-1/2 text-right">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">ابتسامة صحية وجميلة تبدأ من هنا</h1>
+                    <p class="text-xl text-gray-600 mb-8">نقدم رعاية أسنان متكاملة باستخدام أحدث التقنيات والأساليب الطبية</p>
+                    <div class="space-x-4 space-x-reverse">
+                        <a href="tel:015507662295" class="bg-primary text-white px-8 py-3 rounded-full font-medium hover:bg-blue-600 transition duration-300">
+                            احجز موعدك الآن
+                        </a>
+                        <a href="#contact" class="border-2 border-primary text-primary px-8 py-3 rounded-full font-medium hover:bg-blue-50 transition duration-300">
+                            تواصل معنا
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 mt-12 lg:mt-0">
+                    <img src="https://img.freepik.com/free-photo/beautiful-girl-sitting-dentist-s-office_1157-21014.jpg" alt="طبيب الأسنان" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">خدماتنا</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">زراعة الأسنان</h3>
+                    <p class="text-gray-600">حلول دائمة وفعالة لاستبدال الأسنان المفقودة بأسنان صناعية ثابتة.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fas fa-teeth"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">تقويم الأسنان</h3>
+                    <p class="text-gray-600">علاج مشاكل إطباق الأسنان وتحسين المظهر العام للفم والوجه.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fas fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">حشو وعلاج العصب</h3>
+                    <p class="text-gray-600">علاج تسوس الأسنان وحشوها لحمايتها من المضاعفات.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fas fa-teeth"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">تجميل الأسنان</h3>
+                    <p class="text-gray-600">تحسين مظهر الأسنان وابتسامتك باستخدام أحدث التقنيات التجميلية.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">طب أسنان الأطفال</h3>
+                    <p class="text-gray-600">رعاية متخصصة لأسنان الأطفال مع جو مريح وودي.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fas fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">علاج اللثة</h3>
+                    <p class="text-gray-600">تشخيص وعلاج أمراض اللثة للحفاظ على صحة الفم.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex items-center">
+                <div class="lg:w-2/5 mb-12 lg:mb-0 lg:pl-16">
+                    <img src="https://www2.0zz0.com/2025/08/24/19/665728996.jpg" alt="Dr. Mohamed Sand" class="rounded-lg shadow-xl w-full h-auto max-w-md mx-auto">
+                </div>
+                <div class="lg:w-3/5 pr-0 lg:pr-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Dr. Mohamed Sand</h2>
+                    <div class="w-20 h-1 bg-primary mb-6"></div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        A specialized dentist with years of experience in dental care. Holds a Bachelor's degree in Dental Medicine from Alexandria University, with advanced training in the latest techniques in dental implants and cosmetic dentistry.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        At our clinic, we strive to provide comprehensive and comfortable care for all patients, with a focus on high quality and excellent results. We use the latest equipment and techniques to ensure you receive the best possible treatment.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 text-xl mt-1 ml-2"></i>
+                            <div>
+                                <h4 class="font-semibold">Extensive Experience</h4>
+                                <p class="text-gray-600 text-sm">Over 10 years of experience in dentistry</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 text-xl mt-1 ml-2"></i>
+                            <div>
+                                <h4 class="font-semibold">Advanced Technology</h4>
+                                <p class="text-gray-600 text-sm">We use the latest equipment and techniques in dental treatment</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 text-xl mt-1 ml-2"></i>
+                            <div>
+                                <h4 class="font-semibold">Exceptional Care</h4>
+                                <p class="text-gray-600 text-sm">Integrated medical team to ensure your comfort and satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">تواصل معنا</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">نحن هنا لمساعدتك والرد على استفساراتك. لا تتردد في التواصل معنا عبر أي من الوسائل التالية:</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-full text-primary mr-4">
+                            <i class="fas fa-map-marker-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-1">العنوان</h3>
+                            <p class="text-gray-600">سيدي بشر، الإسكندرية</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-full text-primary mr-4">
+                            <i class="fas fa-phone-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-1">هاتف العيادة</h3>
+                            <a href="tel:015507662295" class="text-gray-600 hover:text-primary transition duration-300">015507662295</a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-full text-primary mr-4">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-1">واتساب</h3>
+                            <a href="https://wa.me/2015507662295" target="_blank" class="text-gray-600 hover:text-primary transition duration-300">ارسل رسالة</a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-full text-primary mr-4">
+                            <i class="far fa-clock text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">ساعات العمل</h3>
+                            <p class="text-gray-600 mb-1">السبت - الخميس: 10 ص - 10 م</p>
+                            <p class="text-gray-600">الجمعة: مغلق</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Map -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden h-96">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.123456789012!2d29.98765432101234!3d31.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDA3JzI0LjQiTiAyOcKwNTknMTUuNiJF!5e0!3m2!1sen!2seg!4v1623456789012!5m2!1sen!2seg" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        class="rounded-lg">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">عن العيادة</h3>
+                    <p class="text-gray-400">نقدم أفضل الخدمات الطبية في مجال طب الأسنان باستخدام أحدث التقنيات والمعايير العالمية.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">الرئيسية</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">الخدمات</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">عن العيادة</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">التواصل</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">تواصل معنا</h3>
+                    <div class="space-y-2">
+                        <p class="text-gray-400 flex items-center">
+                            <i class="fas fa-map-marker-alt ml-2"></i>
+                            سيدي بشر، الإسكندرية
+                        </p>
+                        <p class="text-gray-400 flex items-center">
+                            <i class="fas fa-phone-alt ml-2"></i>
+                            <a href="tel:015507662295" class="hover:text-white transition duration-300">015507662295</a>
+                        </p>
+                        <div class="flex space-x-4 space-x-reverse mt-4">
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="https://wa.me/2015507662295" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p> 2023 عيادة د. محمد سند لطب الأسنان. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/2015507662295" target="_blank" class="fixed bottom-8 left-8 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-600 transition duration-300 z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl shadow-lg hover:bg-blue-600 transition duration-300 z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden md:hidden fixed inset-0 bg-white z-50 overflow-y-auto" style="display: none;">
+        <div class="flex justify-end p-4">
+            <button class="close-mobile-menu text-2xl">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="px-8 py-4">
+            <a href="#home" class="block py-3 text-lg font-medium hover:text-primary transition duration-300">الرئيسية</a>
+            <a href="#services" class="block py-3 text-lg font-medium hover:text-primary transition duration-300">الخدمات</a>
+            <a href="#about" class="block py-3 text-lg font-medium hover:text-primary transition duration-300">عن العيادة</a>
+            <a href="#contact" class="block py-3 text-lg font-medium hover:text-primary transition duration-300">التواصل</a>
+            <a href="tel:015507662295" class="mt-4 block bg-primary text-white text-center py-3 rounded-lg font-medium hover:bg-blue-600 transition duration-300">
+                <i class="fas fa-phone ml-1"></i> احجز موعد
+            </a>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
